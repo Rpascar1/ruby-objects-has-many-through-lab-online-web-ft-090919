@@ -23,7 +23,7 @@ class Doctor
   end
   
   def appointments
-    Appointment.all.seclect {|appointment|appointment.doctor == self}
+    Appointment.all.select {|appointment|appointment.doctor == self}
   end
     
 
