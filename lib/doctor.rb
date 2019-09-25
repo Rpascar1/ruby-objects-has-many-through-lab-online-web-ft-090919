@@ -19,8 +19,8 @@ class Doctor
   end
   
   
-  def new_patient(name,genre)
-    Song.new(name,self,genre)
+  def new_patient(name,date)
+    Song.new(name,self,date)
   end
 
   
