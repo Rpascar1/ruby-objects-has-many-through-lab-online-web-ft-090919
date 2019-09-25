@@ -14,6 +14,9 @@ class Doctor
   @@all
   end
   
+  
+  
+  
   def patients
     Patient.all.collect {|patient| Patient.doctor == self}
   end
