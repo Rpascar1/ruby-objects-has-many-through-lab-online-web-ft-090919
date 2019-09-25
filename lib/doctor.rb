@@ -22,6 +22,9 @@ class Doctor
     Appointment.all.select {|appointment|appointment.doctor == self}
   end
   
+   def songs
+    Song.all.select {|song| song.artist == self}
+  end
   
   def patients
     Appointment.all.collect {|patient| patient.doctor}
