@@ -9,7 +9,7 @@ class Appointment
   @patient = patient
   @@all << self
   @doctor = doctor
-  @date = artist
+  @date = date
   end
 
   def self.all
