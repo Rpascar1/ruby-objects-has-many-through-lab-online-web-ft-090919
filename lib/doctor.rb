@@ -18,16 +18,6 @@ class Doctor
     Patient.all.collect {|patient| Patient.doctor == self}
   end
   
-  
-  def new_patient(name,date)
-    Song.new(name,self,date)
-  end
 
-  
-
-  def genres
-    songs.collect {|song| song.genre}
-  end
-  
   
 end
