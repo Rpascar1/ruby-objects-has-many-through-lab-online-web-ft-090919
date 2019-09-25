@@ -14,16 +14,16 @@ class Doctor
   @@all
   end
   
+  def patients
+    Patient.all.collect {|patient| Patient.doctor == self}
+  end
+  
+  
   def new_patient(name,genre)
     Song.new(name,self,genre)
   end
-  #  def songs
-  #  Song.all.select {|song| song.artist == self}
-  #end
+
   
-  def songs
-    Song.all.collect {|song| song.artist == self}
-  end
 
   def genres
     songs.collect {|song| song.genre}
