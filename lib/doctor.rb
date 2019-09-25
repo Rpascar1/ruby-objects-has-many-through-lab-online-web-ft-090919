@@ -22,6 +22,10 @@ class Doctor
     Patient.all.collect {|patient| Patient.doctor == self}
   end
   
+  def appointments
+    Appointment.all.seclect {|appointment|appointment.doctor == self}
+  end
+    
 
   
 end
